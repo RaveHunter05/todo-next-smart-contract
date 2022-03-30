@@ -8,11 +8,14 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prettier-solidity": "prettier --write 'contracts/*.sol'",
+    "lint-solidity": "prettier --list-different 'contracts/*.sol'"
   },
   "dependencies": {
     "lint-staged": "^12.3.7",
     "next": "12.1.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
